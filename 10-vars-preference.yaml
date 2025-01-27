@@ -13,13 +13,13 @@
     prompt: please enter your course duration
     private: false
   vars:
-   COURSE: "DevOps with AWS"
+   COURSE: "DevOps with AWS from paly level"
    DURATION: "120hrs"
    TRAINER: "Sivakumar reddy"
   tasks:
   - name: print the information
     vars:
-     COURSE: "Ansible"
+     COURSE: "Ansible from task level"
      DURATION: "120hrs"
      TRAINER: "Sivakumar reddy"
     ansible.builtin.debug:
