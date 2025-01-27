@@ -1,0 +1,26 @@
+- name: variables to print
+  hosts: web
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter your course name
+    private: false
+  - name: TRAINER
+    prompt: please enter your trainer name
+    private: false
+  - name: DURATION
+    prompt: please enter your course duration
+    private: false
+  vars:
+   COURSE: "DevOps with AWS"
+   DURATION: "120hrs"
+   TRAINER: "Sivakumar reddy"
+  tasks:
+  - name: print the information
+    vars:
+     COURSE: "Ansible"
+     DURATION: "120hrs"
+     TRAINER: "Sivakumar reddy"
+     ansible.builtin.debug:
+     msg: " Hi Iam learning {{COURSE}} and duration is {{DURATION}} and trainer is {{TRAINER}}"
