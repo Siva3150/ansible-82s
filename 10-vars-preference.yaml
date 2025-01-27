@@ -12,10 +12,10 @@
   # - name: DURATION
   #   prompt: please enter your course duration
   #   private: false
-  vars:
-   COURSE: "DevOps with AWS from paly level"
-   DURATION: "120hrs"
-   TRAINER: "Sivakumar reddy"
+  # vars:
+  #  COURSE: "DevOps with AWS from paly level"
+  #  DURATION: "120hrs"
+  #  TRAINER: "Sivakumar reddy"
   tasks:
   - name: print the information
     # vars:
