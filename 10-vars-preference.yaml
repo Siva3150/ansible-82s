@@ -2,16 +2,16 @@
   hosts: web
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: COURSE
-    prompt: please enter your course name
-    private: false
-  - name: TRAINER
-    prompt: please enter your trainer name
-    private: false
-  - name: DURATION
-    prompt: please enter your course duration
-    private: false
+  # vars_prompt:
+  # - name: COURSE
+  #   prompt: please enter your course name
+  #   private: false
+  # - name: TRAINER
+  #   prompt: please enter your trainer name
+  #   private: false
+  # - name: DURATION
+  #   prompt: please enter your course duration
+  #   private: false
   vars:
    COURSE: "DevOps with AWS from paly level"
    DURATION: "120hrs"
