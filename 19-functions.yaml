@@ -18,21 +18,38 @@
     ansible.builtin.debug:
      msg: " {{ greeting | upper }} "
 
-  - name: convert to uppercase
+  - name: unique numbers
     vars:
      numbers: [1,2,3,45,4,5,3,5,4]
     ansible.builtin.debug:
      msg: " {{ numbers | unique }} "
 
-  - name: convert to uppercase
+  - name: max number
     vars:
      numbers: [1,2,3,45,4,5,3,5,4]
     ansible.builtin.debug:
      msg: " {{ numbers | max }} "
 
-  - name: convert to uppercase
+  - name: min number
     vars:
      numbers: [1,2,3,45,4,5,3,5,4]
     ansible.builtin.debug:
      msg: " {{ numbers | min }} "
 
+  - name: convert map to list
+    vars:
+     course:
+      name: "DevOps with AWS"
+      duration: "120 hrs"
+      trainer: " sivakumar reddy"
+    ansible.builtin.debug:
+     msg: " {{ course | dict2items }}"
+
+  - name: convert list to map
+    vars:
+     course:
+     - {"key": "name", "value": "Devops with AWS"}
+     - {"key": "duration", "value": "130hrs"}
+     - {"key": "trainer", "value": "siva"}
+    ansible.builtin.debug:
+     msg: " {{ course | dict2items }}"
