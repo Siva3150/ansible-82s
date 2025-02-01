@@ -18,3 +18,9 @@
     ansible.builtin.debug:
      msg: " {{ greeting | upper }} "
 
+  - name: convert to uppercase
+    vars:
+     numbers: [1,2,3,45,4,5,3,5,4]
+    ansible.builtin.debug:
+     msg: " {{ numbers | unique }} "
+
