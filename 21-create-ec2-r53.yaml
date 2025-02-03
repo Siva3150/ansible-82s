@@ -4,7 +4,7 @@
   # assignment
   # move this to vars_files
   vars:
-    subnet_id: "subnet-0cb5f65d37fd48e90" # replace with your subnet id
+    subnet_id: "subnet-07651dbdbf8b5c8b5" # replace with your subnet id
     sg_id: "sg-0e12349e784c6ec0a"
     ami_id: "ami-09c813fb71547fc4f"
     instances:
